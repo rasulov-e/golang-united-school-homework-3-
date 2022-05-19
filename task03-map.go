@@ -10,7 +10,7 @@ func sortMapValues(input map[int]string) ([]string) {
 		vals = append(vals, v)
 	}
 	sort.Slice(vals, func(i, j int) bool {
-		return keys[i] > keys[j]
+		return keys[i] < keys[j]
 	})
 	return vals
 }
